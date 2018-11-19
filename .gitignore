@@ -1,1 +1,8 @@
+.ipynb_checkpoints
 __pycache__
+
+
+src/build/
+src/cmake-build-debug/
+src/cmake-build-release/
+src/.idea
