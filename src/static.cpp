@@ -12,6 +12,7 @@ int fun_static_local (int i_) {
 static int i_global = 1; // cannot be used by `extern` in other file
 
 int fun_static_global (int i_) {
+    i_global += i_;
     return i_global + i_;
 }
 
@@ -63,7 +64,7 @@ public:
 
 int myClass2::i_static = 1;
 
-// explict
+// explict keyword
 class myClass3 {
     double i;
 
@@ -106,6 +107,10 @@ int main() {
     cout << "static class emthod" << endl;
     myClass2 c21(10);
     cout << c21.getSum() << endl;
+    cout << myClass2::getSum() << endl; // static can be accessed by className::functionName
+    myClass2 c22(5);
+    cout << c22.getSum() << endl;
+    cout << myClass2::getSum() << endl;
 
 
     cout << "class constructor explicit" << endl;
