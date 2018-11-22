@@ -6,3 +6,7 @@ src/build/
 src/cmake-build-debug/
 src/cmake-build-release/
 src/.idea
+
+demo_cmake/build
+demo_cmake/include
+demo_cmake/install
